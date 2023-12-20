@@ -101,6 +101,7 @@
     width: 94%;
     color: black;
     text-align: center;
+    text-shadow: -8px 8px 0px #e0e0e0;
   }
   h3 {
     margin-bottom: 0;

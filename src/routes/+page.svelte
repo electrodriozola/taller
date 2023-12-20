@@ -17,7 +17,7 @@
 ></NavBar>
 <div class="container background">
   <div class="card">
-    <p>pito</p>
+    <h1>Traenos tu motor, nosotros hacemos el resto</h1>
   </div>
 </div>
 <div 
@@ -55,11 +55,14 @@
   }
 
   .card {
-    height: 500px;
+    height: 100%;
+    min-height: 320px;
+    max-height: 500px;
     width: 40%;
     min-width: 300px;
     max-width: 500px;
     background: white;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 4px 16px rgb(10,10,10);
     -webkit-box-shadow: 0px 4px 16px rgb(10,10,10);
@@ -96,6 +99,7 @@
     } 
     .background {
       justify-content: center;
+      padding-top: calc(5% + 70px);
     } 
     #servicios {
       height: 660px;

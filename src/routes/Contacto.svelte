@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { fade, fly } from 'svelte/transition';
+  import { fade, fly } from 'svelte/transition';
   import { inview } from 'svelte-inview';
 
   let isInView: boolean;
@@ -30,7 +30,7 @@
       <p>r.odriozola.520@gmail.com</p>
       </div>
     </a>
-    <a href="https://maps.app.goo.gl/5R58TeTCN3qBPuaj6" target="_blank" in:fly={{duration:500, delay:1500, y:100}} class="box">
+    <a href="https://maps.app.goo.gl/rNEAAPGpZj1zi8iv8" target="_blank" in:fly={{duration:500, delay:1500, y:100}} class="box">
       <img src="./googlePin.png" alt="">
       <div>
       <h3>COMO LLEGAR</h3>
@@ -69,6 +69,7 @@
     letter-spacing: -2px;
     margin: 32px;
     color: black;
+    text-shadow: -8px 8px 0px #e0e0e0;
   }
   h3 {
     margin-block: 6px;
