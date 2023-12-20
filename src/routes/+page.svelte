@@ -1,2 +1,114 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+
+  import QuienesSomos from "./QuienesSomos.svelte";
+  import NavBar from "./NavBar.svelte";
+  import '../styles.css'
+  import Servicios from "./Servicios.svelte";
+  import Contacto from "./Contacto.svelte";
+  import Footer from './Footer.svelte';
+
+</script>
+
+<svelte:head>
+  <title>ODRIOZOLA Electromecanica</title>
+</svelte:head>
+
+<NavBar
+></NavBar>
+<div class="container background">
+  <div class="card">
+    <p>pito</p>
+  </div>
+</div>
+<div 
+  class="container" id="quienessomos">
+  <QuienesSomos></QuienesSomos>
+</div>
+<div 
+ class="container" id="servicios">
+  <Servicios></Servicios>
+</div>
+<div
+  class="container" id="contacto">
+  <Contacto></Contacto>
+</div>
+<Footer/>
+
+ <style>
+
+  .container {
+    display: flex;
+    width: 100%;
+    min-height: 85vh;
+  }
+
+  .background {
+    height: calc(100vh - 60px);
+    background-image: url('./bobinado-background.jpg');
+    background-size: cover;
+    -webkit-filter: grayscale(20%);
+    padding: 5%;
+    padding-top: calc(5% + 108px);
+    align-items: center;
+    justify-content: end;
+    box-shadow: inset 0px 4px 16px rgb(10,10,10);
+  }
+
+  .card {
+    height: 500px;
+    width: 40%;
+    min-width: 300px;
+    max-width: 500px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 16px rgb(10,10,10);
+    -webkit-box-shadow: 0px 4px 16px rgb(10,10,10);
+    -moz-box-shadow: 0px 4px 16px rgb(10,10,10);
+  }
+
+  #quienessomos {
+    border-top: 60px solid #202020;
+    background: white;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+  }
+
+  #servicios {
+    border-top: 60px solid #1c542d;
+    position: relative;
+    background: white;
+    z-index: 6;
+    height: 700px;
+  }
+
+  #contacto {
+    border-top: solid 60px darkslateblue;
+  }
+
+  @media screen and (max-width: 800px) {
+    .container{
+      height: auto;
+      min-height: 75vh;
+    }
+    .card {
+      align-self: center;
+    } 
+    .background {
+      justify-content: center;
+    } 
+    #servicios {
+      height: 660px;
+    }
+    #contacto {
+      height: 780px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+  #quienessomos{
+      height: 880px;
+    }
+  }
+
+ </style>
