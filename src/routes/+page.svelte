@@ -11,6 +11,7 @@
 
 <svelte:head>
   <title>ODRIOZOLA Electromecanica</title>
+  <meta name="description" content="Ubicados en Santa Fe, Santa Fe; somos un taller electromecanico que repara bombas industriales y domesticas. Con mas de 20 años de experienca en el oficio.">
 </svelte:head>
 
 <NavBar
