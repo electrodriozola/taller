@@ -86,7 +86,7 @@
   }
 
   #contacto {
-    border-top: solid 60px darkslateblue;
+    border-top: solid 60px #073980;
   }
 
   @media screen and (max-width: 800px) {

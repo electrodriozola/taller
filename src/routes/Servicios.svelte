@@ -19,16 +19,19 @@
     svg: Lupa,
     h3: "DIAGNOSTICO",
     p: "Analizamos a fondo las fallas visuales, sonoras y de trabajo de los motores",
+    num: 1
   },
   {
     svg: Change,
     h3: "REEMPLAZO DE PARTES",
     p: "Reemplazamos las piezas dañadas o rotas con las mejores opciones disponibles en el mercado",
+    num: 2
   },
   {
     svg: Fix,
     h3: "REPARACION ARTESANAL",
-    p: "Correjimos artesanalmente al milimetro aquellas partes imposibles de cambiar"
+    p: "Correjimos artesanalmente al milimetro aquellas partes imposibles de cambiar",
+    num: 3
   }]
 
 </script>
@@ -58,6 +61,7 @@
       <div class="servicio">
         <div class="svg">
           {@html servicio.svg}
+          <div class="numero"><p>{index+1}</p></div>
         </div>
         <h3>{servicio.h3}</h3>
         <p>{servicio.p}</p>
@@ -91,6 +95,23 @@
     box-shadow: 0px 0px 50px -28px rgba(0,0,0,0.62);
 -webkit-box-shadow: 0px 0px 50px -28px rgba(0,0,0,0.62);
 -moz-box-shadow: 0px 0px 50px -28px rgba(0,0,0,0.62);
+  }
+  .servicio .numero {
+    position:fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 20px;
+    margin-right: 150px ;
+    z-index: 3;
+    padding: 8px;
+    background: #202020;
+  }
+  .servicio .numero p {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-weight: 700;
   }
   h2 {
     font-weight:900;
