@@ -44,7 +44,7 @@
 
   .background {
     height: calc(100vh - 60px);
-    background-image: url('./bobinado-background.jpg');
+    background-image: url('$lib/images/bobinado-background.jpg');
     background-size: cover;
     -webkit-filter: grayscale(20%);
     padding: 5%;

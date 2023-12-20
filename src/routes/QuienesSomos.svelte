@@ -77,7 +77,7 @@
     font-weight: 700;
   }
   h3::before {
-    content: url('./svg/checkbox.svg');
+    content: url('$lib/checkbox.svg');
     position: relative;
     top: 8px;
     left: -8px;
