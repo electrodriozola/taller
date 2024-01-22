@@ -17,21 +17,21 @@
   {#if isInView}
   <div class="box-array">
     <a href="https://wa.link/my4ams" target="_blank" in:fly={{duration:500, delay:500, y:100}} class="box">
-      <img src="./whatsapp.png" alt="">
+      <img src="./whatsapp.png" alt="Logo de whatsapp">
       <div>
         <h3>WHATSAPP</h3>
         <p>+54 342 508 2986</p>
       </div>
     </a>
     <a href="mailto:abc@example.com" target="_blank" in:fly={{duration:500, delay:1000, y:100}} class="box">
-      <img src="./email.png" alt="">
+      <img src="./email.png" alt="Sobre de correo">
       <div>
       <h3>CORREO</h3>
       <p>r.odriozola.520@gmail.com</p>
       </div>
     </a>
     <a href="https://maps.app.goo.gl/rNEAAPGpZj1zi8iv8" target="_blank" in:fly={{duration:500, delay:1500, y:100}} class="box">
-      <img src="./googlePin.png" alt="">
+      <img src="./googlePin.png" alt="Pin de Ubicacion">
       <div>
       <h3>COMO LLEGAR</h3>
       <!-- <p>Los Jazmines 6005</p> -->
@@ -129,6 +129,9 @@
       text-align: center;
       font-size: 3rem;
     }
+    a p {
+      font-size: .8rem;
+    }
     section {
       padding: 0;
     }
@@ -140,7 +143,7 @@
     .box {
       flex-direction: row;
       height: 180px;
-      width: 330px;
+      width: 310px;
       justify-content: space-between;
 
     } 

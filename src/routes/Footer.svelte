@@ -3,9 +3,10 @@
 </script>
 
 <footer>
+  <div>
   <div class="block">
   <div class="logo">
-    <img src="./Logo.png" alt="">
+    <img src="./Logo.png" alt="Logo de la marca">
     <h2>ODRIOZOLA</h2>
   </div>
 
@@ -21,7 +22,9 @@
       <li><a href="#quienessomos">Nuestro Taller</a></li>
       <li><a href="#servicios">Servicios</a></li>
       <li><a href="#contacto">Contacto</a></li>
-    </ul></div>
+    </ul>
+  </div>
+</div>
   <div class="copy">	<p>EMI &copy {new Date().getFullYear()}</p></div>
 </footer>
 
@@ -35,17 +38,18 @@
     display: flex;
     padding: 20px;
     color: #C0C0C0;
+    justify-content: space-between;
   }
 
   .logo {
-    width: 320px;
+    width: auto;
     display: flex;
     align-items: center;
   }
 
   .block  {
     display: inline-block;
-    height: 100%;
+    height: auto;
     border-right: 2px solid #707070;
     padding-inline: 40px;
     align-self: center;
@@ -61,7 +65,7 @@
   h2 {
     font-family: 'Krona One';
   letter-spacing: -4px;
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin: 0 ;
   }
 
@@ -81,13 +85,16 @@
 
   .copy {
     display: flex;
-    width: 30%;
+    width: auto;
     align-items: end;
+    align-self: flex-end;
     justify-content: end;
   }
   .copy p {
+    width: 100%;
     margin: 0;
     color: #707070;
+    text-align: end;
   }
 
 @media screen and (max-width: 800px) {

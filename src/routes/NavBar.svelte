@@ -20,7 +20,7 @@
 <nav class="big-nav" in:fly={{y:-20}} out:fly={{y:-100}}>
   <div class="container" >
     <div class="logo">
-      <img src="./Logo.png" alt="">
+      <img src="./Logo.png" alt="Logo de la marca">
       <div>
       <h1>ODRIOZOLA</h1>
       <p>ELECTROMECANICA</p>
@@ -28,8 +28,8 @@
     </div>
     <div class="links">
       <ul>
-        <li><a href="#quienessomos">NUESTRO TALLER</a></li>
         <li><a href="#servicios">SERVICIOS</a></li>
+        <li><a href="#quienessomos">EL TALLER</a></li>
         <li><a href="#contacto">CONTACTO</a></li>
       </ul>
     </div>
@@ -43,8 +43,8 @@
     </div>
     <div class="small-links">
       <ul>
-        <li><a href="#quienessomos">NUESTRO TALLER</a></li>
         <li><a href="#servicios">SERVICIOS</a></li>
+        <li><a href="#quienessomos">EL TALLER</a></li>
         <li><a href="#contacto">CONTACTO</a></li>
       </ul>
     </div>
@@ -65,6 +65,7 @@ nav {
   z-index: 10;
   height: 108px;
   width: 100%;
+  max-width: 1920px;
   background: white;
   box-shadow: 0px 4px 16px rgb(10,10,10);
   padding-inline: 2%;
@@ -74,6 +75,7 @@ nav {
   z-index: 8;
   height: 60px;
   width: 100%;
+  max-width: 1920px;
   background: white;
   box-shadow: 0px 4px 16px rgb(30,30,30);  
 }
@@ -172,16 +174,19 @@ ul a {
   position: relative;
   height: 4px;
   width: 100%;
+  max-width: 1920px;
   background: lightgray;
-
+  overflow: hidden;
 }
 
 .progressbar div {
   position: relative;
   height: 4px;
   width: 100%;
+  max-width: 1920px;
   background: black;
   z-index: 10;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 950px) {
@@ -195,7 +200,7 @@ ul a {
     padding-inline: 0;
   }
   h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-top: -4px;
   }
   .big-nav {
@@ -234,5 +239,4 @@ ul a {
     font-size: 12px;
   }
 }
-
 </style>

@@ -22,12 +22,12 @@
   </div>
 </div>
 <div 
-  class="container" id="quienessomos">
-  <QuienesSomos></QuienesSomos>
+class="container" id="servicios">
+<Servicios></Servicios>
 </div>
 <div 
- class="container" id="servicios">
-  <Servicios></Servicios>
+  class="container" id="quienessomos">
+  <QuienesSomos></QuienesSomos>
 </div>
 <div
   class="container" id="contacto">
@@ -47,11 +47,12 @@
     height: calc(100vh - 60px);
     background-image: url('$lib/images/bobinado-background.jpg');
     background-size: cover;
+    filter: grayscale(20%);
     -webkit-filter: grayscale(20%);
     padding: 5%;
     padding-top: calc(5% + 108px);
     align-items: center;
-    justify-content: end;
+    justify-content: baseline;
     box-shadow: inset 0px 4px 16px rgb(10,10,10);
   }
 
@@ -59,9 +60,7 @@
     height: 100%;
     min-height: 320px;
     max-height: 500px;
-    width: 40%;
-    min-width: 300px;
-    max-width: 500px;
+    width: 440px;
     background: white;
     padding: 20px;
     border-radius: 5px;
@@ -71,7 +70,7 @@
   }
 
   #quienessomos {
-    border-top: 60px solid #202020;
+    border-top: 60px solid #1c542d;
     background: white;
     width: 100%;
     height: 600px;
@@ -79,7 +78,7 @@
   }
 
   #servicios {
-    border-top: 60px solid #1c542d;
+    border-top: 60px solid #303030;
     position: relative;
     background: white;
     z-index: 6;

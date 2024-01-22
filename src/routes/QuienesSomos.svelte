@@ -1,6 +1,8 @@
 <script lang="ts">
   import { fade, fly } from "svelte/transition";
   import { inview } from "svelte-inview";
+  //@ts-ignore
+  import Carousel from 'svelte-carousel'
 
   let isInView: boolean;
   let scroll: number;
@@ -21,7 +23,7 @@
     isInView = detail.inView;
   }}
 >
-  <h2>NUESTRO TALLER</h2>
+  <h2>EL TALLER</h2>
   {#if isInView}
   <div class="textbox">
     <div in:fly={{delay:250, duration: 800, x: -200}}>
@@ -43,9 +45,9 @@
     </p>
   </div>
   </div>
-  <div class="images" in:fly={{ duration: 1000, y:600}} out:fade={{duration: 1000}}>
-    <img src="./Foto1.jpg" alt="foto1" class="img1" style:transform={`translateY( ${parallaxImg1}px)`}>
-    <img src="./Foto2.jpg" alt="foto1" class="img2" style:transform={`translateY( ${parallaxImg2}px)`}>
+  <div class="images" in:fly={{ duration: 1000, x :600}} out:fade={{duration: 1000}}>
+    <img src="./Foto1.jpg" alt="foto1" class="img1">
+
   </div>
   {/if}
 </div>
@@ -53,6 +55,7 @@
 <style>
   .wrapper{
     padding: 28px;
+    width: 100%;
     display: grid;
     grid-template-rows: 25% 75%;
     grid-template-areas: "titulo imagenes"
@@ -61,13 +64,13 @@
   }
   h2 {
     font-weight:900;
-    font-size: 62px;
+    font-size: 4rem;
     letter-spacing: -2px;
     margin: 32px;
     margin-bottom: 0;
     color: black;
-    text-align: center;
     text-shadow: -8px 8px 0px #e0e0e0;
+    margin-inline: auto;
   }
   h3{
     margin-bottom: 0;
@@ -100,27 +103,21 @@
   .textbox div {
     width: 80%;
   }
+
+  .images {
+    height: 100%;
+    grid-area: imagenes;
+  }
   .img1{
-    width: 50%;
-    position: relative;
-    height: auto;
-    top: -12px;
-    left: 20px;
+    width: auto;
+    height: 100%;
+    margin-top: 30px;
+    border-radius: 15px;
     /* clip-path: polygon(0% 10%, 0% 100%, 100% 90%, 100% 0%);
     -webkit-clip-path: polygon(0% 10%, 0% 100%, 100% 90%, 100% 0%); */
     box-shadow: -8px 8px 0px rgb(10,10,10,.10);
     grid-area: imagenes;
     z-index: 4;
-  }
-  .img2{
-    width: 40%;
-    height: auto;
-    position: relative;
-    /* clip-path: polygon(0% 10%, 0% 100%, 100% 90%, 100% 0%);
-    -webkit-clip-path: polygon(0% 10%, 0% 100%, 100% 90%, 100% 0%); */
-    box-shadow: -8px 8px 0px rgb(10,10,10,.10);
-    grid-area: imagenes;
-    z-index: 3;
   }
 
   @media screen and (max-width: 1100px) {
@@ -130,6 +127,13 @@
     }
     .images {
       display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    h2 {
+      margin: 0;
+      font-size: 3rem;
     }
   }
 </style>
