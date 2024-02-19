@@ -61,7 +61,7 @@
     display: flex;
     height: 100%;
     justify-content: center;
-    gap: 30px;
+    gap: 12px;
   }
   h2 {
     font-weight:900;
@@ -109,8 +109,7 @@
     }
 
   .box:hover {
-    background: #efefef;
-    border: 7px solid black;
+    border: 7px solid #ce6923;
   }
   .box:hover img{
     animation: rotate-scale 1s alternate ease-in-out;

@@ -29,19 +29,19 @@
     <div in:fly={{delay:250, duration: 800, x: -200}}>
     <h3>Cargado de experiencia</h3>
     <p>
-     +20 años reparando motores de todos los tamaños y potencias.
+     +30 años reparando motores de todos los tamaños y potencias.
     </p>
   </div>
   <div in:fly={{delay:750, duration: 800, x: -200}}>
     <h3>Vasto equipamiento</h3>
     <p>
-     Equipado con las herramientas para solucionar el mas amplio espectro de problemas.
+     Equipado con las herramientas necesarias para solucionar el mas amplio espectro de problemas.
     </p>
   </div>
   <div in:fly={{delay:1250, duration: 800, x: -200}}>
     <h3>Orientados a la Industria</h3>
     <p>
-      Acostumbrados a trabajar con motores de gran peso y potencia, reparamos motores de hasta xHP
+      Acostumbrados a trabajar con motores de gran peso y potencia, habiendo reparado motores de hasta 150HP.
     </p>
   </div>
   </div>

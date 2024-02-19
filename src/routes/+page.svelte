@@ -11,7 +11,7 @@
 
 <svelte:head>
   <title>ODRIOZOLA Electromecanica</title>
-  <meta name="description" content="Ubicados en Santa Fe, Santa Fe; somos un taller electromecanico que repara bombas industriales y domesticas. Con mas de 20 años de experienca en el oficio.">
+  <meta name="description" content="Ubicados en Santa Fe, Provincia de Santa Fe; somos un taller electromecánico que repara bombas industriales y domésticas. Con mas de 30 años de experienca en el oficio.">
 </svelte:head>
 
 <NavBar
@@ -22,12 +22,12 @@
   </div>
 </div>
 <div 
-class="container" id="servicios">
-<Servicios></Servicios>
-</div>
-<div 
   class="container" id="quienessomos">
   <QuienesSomos></QuienesSomos>
+</div>
+<div 
+class="container" id="servicios">
+<Servicios></Servicios>
 </div>
 <div
   class="container" id="contacto">
@@ -36,7 +36,6 @@ class="container" id="servicios">
 <Footer/>
 
  <style>
-
   .container {
     display: flex;
     width: 100%;
@@ -70,7 +69,7 @@ class="container" id="servicios">
   }
 
   #quienessomos {
-    border-top: 60px solid #1c542d;
+    border-top: 60px solid #303030;
     background: white;
     width: 100%;
     height: 600px;
@@ -82,11 +81,11 @@ class="container" id="servicios">
     position: relative;
     background: white;
     z-index: 6;
-    height: 700px;
+    height: 720px;
   }
 
   #contacto {
-    border-top: solid 60px #073980;
+    border-top: solid 60px #303030;
   }
 
   @media screen and (max-width: 800px) {
@@ -102,7 +101,7 @@ class="container" id="servicios">
       padding-top: calc(5% + 70px);
     } 
     #servicios {
-      height: 660px;
+      height: 1020px;
     }
     #contacto {
       height: 780px;

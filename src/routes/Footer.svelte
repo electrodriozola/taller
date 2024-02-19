@@ -16,14 +16,6 @@
     <li><a href="mailto:abc@example.com">r.odriozola.520@gmail.com</a></li>
   </ul>
   </div>
-  <div class="block">
-    <p>ACCESOS RAPIDOS</p>
-    <ul>
-      <li><a href="#quienessomos">Nuestro Taller</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </div>
 </div>
   <div class="copy">	<p>EMI &copy {new Date().getFullYear()}</p></div>
 </footer>
@@ -42,7 +34,7 @@
   }
 
   .logo {
-    width: auto;
+    width: 250px;
     display: flex;
     align-items: center;
   }
@@ -57,7 +49,7 @@
 
 
   img {
-    width: 25%;
+    width: 90px;
     display:inline-flex;
     filter: invert(80%);
   }
@@ -89,6 +81,7 @@
     align-items: end;
     align-self: flex-end;
     justify-content: end;
+    margin-block: 12px ;
   }
   .copy p {
     width: 100%;
