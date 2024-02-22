@@ -158,7 +158,7 @@ class="container" id="servicios">
 
   @media screen and (max-width: 600px) {
   #quienessomos{
-      height:auto;
+      height:800px;
       padding-top: 48px;
     }
   }
