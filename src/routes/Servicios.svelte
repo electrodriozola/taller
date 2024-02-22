@@ -16,7 +16,7 @@
 
   const servicios = [{
     class: "one",
-    img: "motores_industriales.jpg",
+    img: "motores-industriales.webp",
     alt: "",
     h3: "Motores Industriales",
     desc: [
@@ -25,7 +25,7 @@
   },
   {
     class: "two",
-    img: "motores_monofasicos.jpg",
+    img: "motores-monofasicos.webp",
     alt: "",
     h3: "Motores monofasicos y trifasicos",
     desc: [
@@ -34,7 +34,7 @@
   },
   {
     class: "three",
-    img: "bomba_centrifuga.jpg",
+    img: "bomba-centrifuga.webp",
     alt: "",
     h3: "Bombas Centrifugas",
     desc: [
@@ -44,7 +44,7 @@
   },
   {
     class: "four",
-    img: "#",
+    img: "cortadoras-de-cesped.webp",
     alt: "",
     h3: "Cortadoras de cesped",
     desc: [
@@ -54,7 +54,7 @@
   },
   {
     class: "five",
-    img: "#",
+    img: "ventiladores-industriales.webp",
     alt: "",
     h3: "Ventiladores industriales",
     desc: [
@@ -82,10 +82,12 @@
           class="card {servicio.class} servicio"
           style="background-image: url('./{servicio.img}');"
         >
-          <h3>{servicio.h3}</h3>
-          {#each servicio.desc as desc}
-            <p in:fly>{desc}</p>
-          {/each}
+          <div class="bg-black">
+            <h3>{servicio.h3}</h3>
+            {#each servicio.desc as desc}
+              <p>{desc}</p>
+            {/each}
+          </div>
         </div>
       {/each}
   </div>
@@ -106,7 +108,7 @@
     max-width: 1020px;
   }
   .grid {
-    margin-top: 16px;
+    margin-block: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -116,11 +118,11 @@
     background: gray;
     color: white;
     border-radius: 12px;
-    padding: 12px;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    box-shadow: inset -15px -60px 82px rgb(10,10,10, .5);
+    box-shadow: inset -15px -60px 82px rgb(10,10,10, .2);
     background-size: cover;
     background-position: center;
     filter: grayscale(80%);
@@ -163,12 +165,18 @@
     grid-column: 3/9;
     grid-row: 7/9;
   }
+  .bg-black {
+    width: 100%;
+    background: linear-gradient(transparent, #333);
+    padding: 12px;
+    border-radius: 0px 0px 12px 12px
+  }
   h2 {
     font-weight:900;
-    font-size: 62px;
+    font-size: 52px;
     letter-spacing: -2px;
-    margin: 16px;
-    margin-bottom: 0;
+    margin-block: 26px;
+
     width: 94%;
     color: black;
     text-align: center;
@@ -176,7 +184,8 @@
   }
   h3 {
     margin-bottom: 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
     text-transform: capitalize;
   }
   @media screen and (max-width:800px) {

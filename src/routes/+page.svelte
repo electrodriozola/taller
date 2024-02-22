@@ -18,7 +18,16 @@
 ></NavBar>
 <div class="container background">
   <div class="card">
-    <h1>Traenos tu motor, nosotros hacemos el resto</h1>
+    <h1>
+      <span class="title copper">BOBINADOS,</span>
+      <span class="title">REPARACIONES INTEGRALES,</span>
+      <span class="title">Y MANTENIMIENTO DE MOTORES</span>
+    </h1>
+    <h2>En Santa Fe Capital</h2>
+    <p>Encontranos de <strong>Lunes a Sábados:</strong></p>
+    <p>Durante el dia, de <strong>10:00hs a 14:00hs</strong></p>
+    <p>Y por las tardes, de <strong>17:00hs a 21:00hs</strong></p>
+    <a href="#contacto" class="contactese">Contáctese</a>
   </div>
 </div>
 <div 
@@ -36,6 +45,41 @@ class="container" id="servicios">
 <Footer/>
 
  <style>
+  .title {
+    display: block;
+    font-size: 1.4rem;
+  }
+
+  .contactese{
+    color: #ce6923;
+    display: block;
+    text-decoration: underline;
+    margin-top: 24px;
+    font-weight: 600;
+    text-align: end;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+  h2 {
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding-bottom: 12px;
+  }
+  
+  p {
+    margin-bottom: 2px;
+  }
+  p + p{
+    margin-top: 2px;
+  }
+
+  .copper {
+    color: #ce6923;
+  }
   .container {
     display: flex;
     width: 100%;
@@ -44,10 +88,11 @@ class="container" id="servicios">
 
   .background {
     height: calc(100vh - 60px);
-    background-image: url('$lib/images/bobinado-background.jpg');
+    background-image: url('$lib/images/bobinado-background.webp');
     background-size: cover;
-    filter: grayscale(20%);
-    -webkit-filter: grayscale(20%);
+    background-position: center;
+    filter: grayscale(10%);
+    -webkit-filter: grayscale(10%);
     padding: 5%;
     padding-top: calc(5% + 108px);
     align-items: center;
@@ -56,13 +101,13 @@ class="container" id="servicios">
   }
 
   .card {
-    height: 100%;
+    height:auto;
     min-height: 320px;
-    max-height: 500px;
+    max-height: 600px;
     width: 440px;
     background: white;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 24px;
+    border-radius: 12px;
     box-shadow: 0px 4px 16px rgb(10,10,10);
     -webkit-box-shadow: 0px 4px 16px rgb(10,10,10);
     -moz-box-shadow: 0px 4px 16px rgb(10,10,10);
@@ -81,7 +126,7 @@ class="container" id="servicios">
     position: relative;
     background: white;
     z-index: 6;
-    height: 720px;
+    height: 750px;
   }
 
   #contacto {
@@ -101,7 +146,7 @@ class="container" id="servicios">
       padding-top: calc(5% + 70px);
     } 
     #servicios {
-      height: 1020px;
+      height: 1050px;
     }
     #contacto {
       height: 780px;

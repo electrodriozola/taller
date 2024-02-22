@@ -126,7 +126,7 @@ h1 {
 }
 
 .logo div {
-  padding: 16px 0;
+  padding: 18px 0;
 }
 
 .links {
