@@ -83,7 +83,7 @@ class="container" id="servicios">
   .container {
     display: flex;
     width: 100%;
-    min-height: 85vh;
+    min-height: 75vh;
   }
 
   .background {
@@ -145,6 +145,9 @@ class="container" id="servicios">
       justify-content: center;
       padding-top: calc(5% + 70px);
     } 
+    #quienessomos{
+      height: 650px;
+    }
     #servicios {
       height: 1050px;
     }
@@ -155,7 +158,8 @@ class="container" id="servicios">
 
   @media screen and (max-width: 600px) {
   #quienessomos{
-      height: 880px;
+      height:auto;
+      padding-top: 48px;
     }
   }
 

@@ -6,12 +6,6 @@
 
   let isInView: boolean;
   let scroll: number;
-
-  let parallaxImg1: number;
-  let parallaxImg2: number;
-
-  $: parallaxImg1 = scroll / 9;
-  $: parallaxImg2 = scroll / 18;
 </script>
 
   <svelte:window bind:scrollY={scroll}></svelte:window>
@@ -45,10 +39,10 @@
     </p>
   </div>
   </div>
-  <div class="images" in:fly={{ duration: 1000, x :600}} out:fade={{duration: 1000}}>
+  <!-- <div class="images" in:fly={{ duration: 1000, x :600}} out:fade={{duration: 1000}}>
     <img src="./Foto1.jpg" alt="foto1" class="img1">
 
-  </div>
+  </div> -->
   {/if}
 </div>
 
@@ -57,9 +51,8 @@
     padding: 28px;
     width: 100%;
     display: grid;
-    grid-template-rows: 25% 75%;
-    grid-template-areas: "titulo imagenes"
-                         "texto imagenes";
+    grid-template-areas: "titulo"
+                         "texto";
     margin-bottom: 60px;
   }
   h2 {
@@ -78,6 +71,7 @@
     text-transform: uppercase;
     font-size: 26px;
     font-weight: 700;
+    text-align: center;
   }
   h3::before {
     content: url('$lib/checkbox.svg');
@@ -89,6 +83,7 @@
     margin-top: 5px;
     margin-bottom: 0;
     padding-left: 20px;
+    text-align: center;
     color: black;
     font-size: 1.2rem;
   }
@@ -97,29 +92,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     grid-area: texto;
   }
   .textbox div {
-    width: 80%;
+    width: 60%;
   }
-
-  .images {
-    height: 100%;
-    grid-area: imagenes;
-  }
-  .img1{
-    width: auto;
-    height: 100%;
-    margin-top: 30px;
-    border-radius: 15px;
-    /* clip-path: polygon(0% 10%, 0% 100%, 100% 90%, 100% 0%);
-    -webkit-clip-path: polygon(0% 10%, 0% 100%, 100% 90%, 100% 0%); */
-    box-shadow: -8px 8px 0px rgb(10,10,10,.10);
-    grid-area: imagenes;
-    z-index: 4;
-  }
-
   @media screen and (max-width: 1100px) {
     .wrapper {
       padding: 0;
@@ -134,6 +112,9 @@
     h2 {
       margin: 0;
       font-size: 3rem;
+    }
+    .textbox div{
+      width: 75%;
     }
   }
 </style>

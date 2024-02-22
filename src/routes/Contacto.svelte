@@ -67,7 +67,8 @@
     font-weight:900;
     font-size: 62px;
     letter-spacing: -2px;
-    margin: 32px;
+    margin: 20px;
+    margin-bottom: 12px;
     color: black;
     text-shadow: -8px 8px 0px #e0e0e0;
   }
@@ -126,7 +127,7 @@
     h2 {
       margin: 26px 0 0 0;
       text-align: center;
-      font-size: 3rem;
+      font-size: 2.8rem;
     }
     a p {
       font-size: .8rem;
