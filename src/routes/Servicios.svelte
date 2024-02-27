@@ -169,7 +169,7 @@
     width: 100%;
     background: linear-gradient(transparent, #333);
     padding: 12px;
-    border-radius: 0px 0px 12px 12px
+    border-radius: 0px 0px 8px 8px
   }
   h2 {
     font-weight:900;
@@ -235,6 +235,7 @@
     {
       transform: scale(1.04);
       border: solid 6px #ce6923;
+      border-radius: 10px;
       filter: grayscale(10%);
     }
   }
