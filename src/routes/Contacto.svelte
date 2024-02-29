@@ -2,7 +2,13 @@
   import { fade, fly } from 'svelte/transition';
   import { inview } from 'svelte-inview';
 
+  import WhatsAppImage from "$lib/images/whatsapp.png"
+  import EmailImage from "$lib/images/email.png"
+  import GooglePinImage from "$lib/images/googlePin.png"
+
   let isInView: boolean;
+
+
 </script>
 
 <section>
@@ -17,21 +23,21 @@
   {#if isInView}
   <div class="box-array">
     <a href="https://wa.link/my4ams" target="_blank" in:fly={{duration:500, delay:500, y:100}} class="box">
-      <img src="./whatsapp.png" alt="Logo de whatsapp">
+      <img src={WhatsAppImage} alt="Logo de whatsapp">
       <div>
         <h3>WHATSAPP</h3>
         <p>+54 342 508 2986</p>
       </div>
     </a>
     <a href="mailto:abc@example.com" target="_blank" in:fly={{duration:500, delay:1000, y:100}} class="box">
-      <img src="./email.png" alt="Sobre de correo">
+      <img src={EmailImage} alt="Sobre de correo">
       <div>
       <h3>CORREO</h3>
       <p>r.odriozola.520@gmail.com</p>
       </div>
     </a>
     <a href="https://maps.app.goo.gl/rNEAAPGpZj1zi8iv8" target="_blank" in:fly={{duration:500, delay:1500, y:100}} class="box">
-      <img src="./googlePin.png" alt="Pin de Ubicacion">
+      <img src={GooglePinImage} alt="Pin de Ubicacion">
       <div>
       <h3>COMO LLEGAR</h3>
       <!-- <p>Los Jazmines 6005</p> -->
