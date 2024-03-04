@@ -28,8 +28,8 @@
     </div>
     <div class="links">
       <ul>
-        <li><a href="#servicios">SERVICIOS</a></li>
         <li><a href="#quienessomos">EL TALLER</a></li>
+        <li><a href="#servicios">SERVICIOS</a></li>
         <li><a href="#contacto">CONTACTO</a></li>
       </ul>
     </div>
@@ -43,8 +43,8 @@
     </div>
     <div class="small-links">
       <ul>
-        <li><a href="#servicios">SERVICIOS</a></li>
         <li><a href="#quienessomos">EL TALLER</a></li>
+        <li><a href="#servicios">SERVICIOS</a></li>
         <li><a href="#contacto">CONTACTO</a></li>
       </ul>
     </div>
