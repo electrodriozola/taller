@@ -35,7 +35,7 @@
   <div in:fly={{delay:1250, duration: 800, x: -200}}>
     <h3>Orientados a la Industria</h3>
     <p>
-      Acostumbrados a trabajar con motores de gran peso y potencia, habiendo reparado motores de hasta 150HP.
+      Habituados a trabajar con motores de gran peso y potencia, habiendo reparado motores de hasta 150HP.
     </p>
   </div>
   </div>

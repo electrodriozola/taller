@@ -25,8 +25,8 @@
     </h1>
     <h2>En Santa Fe Capital</h2>
     <p>Encontranos de <strong>Lunes a Sábados:</strong></p>
-    <p>Durante el dia, de <strong>10:00hs a 14:00hs</strong></p>
-    <p>Y por las tardes, de <strong>17:00hs a 21:00hs</strong></p>
+    <p>Durante el dia, de <strong>9:30hs a 13:30hs</strong></p>
+    <p>Y por las tardes, de <strong>17:30hs a 21:30hs</strong></p>
     <a href="#contacto" class="contactese">Contáctese</a>
   </div>
 </div>
