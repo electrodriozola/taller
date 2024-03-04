@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-  <title>ODRIOZOLA Electromecanica</title>
+  <title>Reparacion de Motores - ODRIOZOLA en Santa Fe</title>
   <meta name="description" content="Ubicados en Santa Fe, Provincia de Santa Fe; somos un taller electromecánico que repara bombas industriales y domésticas. Con mas de 30 años de experienca en el oficio.">
 </svelte:head>
 
