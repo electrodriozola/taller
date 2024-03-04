@@ -19,8 +19,8 @@
 <div class="container background">
   <div class="card">
     <h1>
-      <span class="title copper">BOBINADOS,</span>
       <span class="title">REPARACIONES INTEGRALES,</span>
+      <span class="title copper">BOBINADOS,</span>
       <span class="title">Y MANTENIMIENTO DE MOTORES</span>
     </h1>
     <h2>En Santa Fe Capital</h2>
