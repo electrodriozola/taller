@@ -13,7 +13,7 @@
   <ul>
     <li><a href="https://maps.app.goo.gl/5R58TeTCN3qBPuaj6">Los Jazmines 6005, Colastine Norte</a></li>
     <li><a href="https://wa.link/my4ams">+543425082986</a></li>
-    <li><a href="mailto:abc@example.com">r.odriozola.520@gmail.com</a></li>
+    <li><a href="mailto:electrodriozola@gmail.com">electrodriozola@gmail.com</a></li>
   </ul>
   </div>
 </div>

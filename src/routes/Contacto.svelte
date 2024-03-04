@@ -29,11 +29,11 @@
         <p>+54 342 508 2986</p>
       </div>
     </a>
-    <a href="mailto:abc@example.com" target="_blank" in:fly={{duration:500, delay:1000, y:100}} class="box">
+    <a href="mailto:electrodriozola@gmail.com" target="_blank" in:fly={{duration:500, delay:1000, y:100}} class="box">
       <img src={EmailImage} alt="Sobre de correo">
       <div>
       <h3>CORREO</h3>
-      <p>r.odriozola.520@gmail.com</p>
+      <p>electrodriozola@gmail.com</p>
       </div>
     </a>
     <a href="https://maps.app.goo.gl/rNEAAPGpZj1zi8iv8" target="_blank" in:fly={{duration:500, delay:1500, y:100}} class="box">
