@@ -10,8 +10,8 @@
 </script>
 
 <svelte:head>
-  <title>Reparacion de Motores - ODRIOZOLA en Santa Fe</title>
-  <meta name="description" content="Ubicados en Santa Fe, Provincia de Santa Fe; somos un taller electromecánico que repara bombas industriales y domésticas. Con mas de 30 años de experienca en el oficio.">
+  <title>Bobinados y Reparaciones - ODRIOZOLA en Santa Fe</title>
+  <meta name="description" content="Somos un taller electromecánico que realiza bobinados y reparaciones de bombas y motores industriales y domésticas. Con mas de 30 años de experienca en el oficio. Ubicados en Colastine Norte, Santa Fe.">
 </svelte:head>
 
 <NavBar
@@ -19,14 +19,14 @@
 <div class="container background">
   <div class="card">
     <h1>
-      <span class="title">REPARACIONES INTEGRALES,</span>
-      <span class="title copper">BOBINADOS,</span>
-      <span class="title">Y MANTENIMIENTO DE MOTORES</span>
+      <span class="title copper">BOBINADOS</span>
+      <span class="title">Y MANTENIMIENTOS</span>
+      <span class="title">DE MOTORES Y BOMBAS</span>
     </h1>
     <h2>En Santa Fe Capital</h2>
-    <p>Encontranos de <strong>Lunes a Sábados:</strong></p>
-    <p>Durante el dia, de <strong>9:30hs a 13:30hs</strong></p>
-    <p>Y por las tardes, de <strong>17:30hs a 21:30hs</strong></p>
+    <p>Horarios de atención: </p> 
+    <p><strong>Lunes a Sábados</strong></p>
+    <p><strong>9:30hs a 13:30hs</strong> - <strong>17:30hs a 21:30hs</strong></p>
     <a href="#contacto" class="contactese">Contáctese</a>
   </div>
 </div>
