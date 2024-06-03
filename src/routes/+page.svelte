@@ -88,7 +88,7 @@ class="container" id="servicios">
 
   .background {
     height: calc(100vh - 60px);
-    background-image: url('$lib/images/bobinado-background.webp');
+    background-image: url('./bobinado-background.webp');
     background-size: cover;
     background-position: center;
     filter: grayscale(10%);
